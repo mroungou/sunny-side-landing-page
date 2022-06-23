@@ -5,7 +5,8 @@ $softRed: hsl(7, 99%, 70%);
 $yellow: hsl(51, 100%, 49%);
 $darkDesaturatedCyan: hsl(167, 40%, 24%);
 $darkBlue: hsl(198, 62%, 26%);
-$darkModerateCyan: hsl(168, 34%, 41%);
+$darkModerateCyan: hsl(167deg, 44%, 70%);
+
 
 $veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
 $veryDarkGrayishBlue: hsl(213, 9%, 39%);
@@ -34,105 +35,205 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0;
-}
-
-main {
-    height: 100%;
-    width: fit-content;
-    .header {
-        height: 70%;
-        background: url("/images/mobile/image-header.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        h1 {
-            text-transform: uppercase;
-            font-family: $fraunces;
-            color: hsl(0, 0%, 100%);
-            font-weight: 900;
-            font-size: 3rem;
-            text-align: center;
-            letter-spacing: 0.4rem;
-
-            
-        }
-    }
-    .ads {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(6, auto);
-        .egg {
-            height: 47vh;
-            background-image: url("/images/mobile/image-transform.jpg");
-            background-size: cover;
+    main {
+        height: 100%;
+        width: fit-content;
+        .header {
+            height: 70%;
+            background: url("/images/mobile/image-header.jpg");
+            background-position: center;
             background-repeat: no-repeat;
-        }
-        .transform {
-            height: fit-content;
-            margin-bottom: 3rem;
-            h4 {
-                @include headers;
-            }
-            p {
-                @include paragraph;
-                padding: 0rem 2rem 2rem;
-            }
-            span {
-                text-align: center;
-                text-transform: uppercase;
-                padding: 0rem 8rem;
-                // padding-bottom: 2rem;
-                font-family: $fraunces;
-                font-weight: 900;
-                text-decoration: underline $yellow;
-            }
-        }
-        .glass {
-            height: 47vh;
-            background-image: url(/images/mobile/image-stand-out.jpg);
             background-size: cover;
-        }
-        .stand-out {
-            h4 {
-                @include headers;
-            }
-            p {
-                @include paragraph();
-                padding: 0rem 2.5rem 2rem;
-            }
-            span {
-                text-align: center;
+            h1 {
+                margin: 0;
                 text-transform: uppercase;
-                padding: 0rem 8rem;
-                // padding-bottom: 2rem;
                 font-family: $fraunces;
+                color: hsl(0, 0%, 100%);
                 font-weight: 900;
-                text-decoration: underline $softRed;
+                font-size: 3rem;
+                text-align: center;
+                letter-spacing: 0.4rem;
+    
+                
             }
         }
-        .graphic {
-            height: 80vh;
-            background-image: url(/images/mobile/image-graphic-design.jpg);
-            background-size: cover;
-            h4{
-                @include headers;
+        .ads {
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            grid-template-rows: repeat(6, auto);
+            .egg {
+                height: 47vh;
+                background-image: url("/images/mobile/image-transform.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
             }
-            p {
-                @include paragraph();
-                padding: 0rem 1rem 2rem;
+            .transform {
+                height: fit-content;
+                margin-bottom: 3rem;
+                h4 {
+                    @include headers;
+                }
+                p {
+                    @include paragraph;
+                    padding: 0rem 2rem 2rem;
+                }
+                span {
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 0rem 8rem;
+                    // padding-bottom: 2rem;
+                    font-family: $fraunces;
+                    font-weight: 900;
+                    text-decoration: underline $yellow;
+                }
+            }
+            .glass {
+                height: 47vh;
+                background-image: url(/images/mobile/image-stand-out.jpg);
+                background-size: cover;
+            }
+            .stand-out {
+                margin-bottom: 3rem;
+                h4 {
+                    @include headers;
+                }
+                p {
+                    @include paragraph();
+                    padding: 0rem 2.5rem 2rem;
+                }
+                span {
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding: 0rem 8rem;
+                    // padding-bottom: 2rem;
+                    font-family: $fraunces;
+                    font-weight: 900;
+                    text-decoration: underline $softRed;
+                }
+            }
+            .graphic {
+                height: 82vh;
+                background-image: url(/images/mobile/image-graphic-design.jpg);
+                background-size: cover;
+                .text1 {
+                    padding-top: 18rem
+                }
+                h4{
+                    @include headers;
+                }
+                p {
+                    @include paragraph();
+                    padding: 1.5rem 1rem 2rem;
+                    color: $darkDesaturatedCyan
+                }
+            }
+            .photography {
+                .text1 {
+                    padding-top: 18rem
+                }
+                height: 82vh;
+                background-image: url(/images/mobile/image-photography.jpg);
+                background-size: cover;
+                h4 {
+                    @include headers;
+                }
+                p {
+                    @include paragraph();
+                    padding: 1rem 1rem 2rem;
+                    color: $darkBlue;
+                }
             }
         }
-        .photography {
-            h4 {
-                @include headers;
+        .testimonials {
+            padding-bottom: 5rem;
+            
+            h3 {
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                text-align: center;
+                font-size: 18px;
+                font-family: $fraunces;
+                color: $darkGrayishBlue;
+                padding-top: 3rem;
+                padding-bottom: 2rem;
             }
-            p {
-                @include paragraph();
-                padding: 0rem 1rem 2rem;
+            .review1 {
+                p {
+                    @include paragraph();
+                    padding: 2.5rem 3rem;
+                    color: $veryDarkGrayishBlue;
+                }
+                
+            }   
+            .review2 {
+                padding-top: 4rem;
+                p {
+                    @include paragraph();
+                    padding: 2.5rem;
+                    color: $veryDarkGrayishBlue;
+                }
+            }
+            .review3 {
+                padding-top: 4rem;
+                p {
+                    @include paragraph();
+                    padding: 2.5rem 2.5rem;
+                    color: $veryDarkGrayishBlue;
+                }
+            }
+            img {
+                    border-radius: 50%;
+                    width: 30%;
+                    padding: 0rem 8.5rem;
+                }
+                .review {
+                    .client {
+                        text-align: center;
+                        line-height: 2;
+                    }
+                    .name {
+                        display: block;
+                        font-family: $fraunces;
+                        font-weight: 900;
+                        font-size: 1.25rem;
+                    }
+                    .title {
+                        // display: block;
+                        font-family: $barlow;
+                        color: $grayishBlue;
+                    }
+                }
+            }
+            .publicity {
+                height: 55vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                .img1 {
+                    background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+                    background-size: cover;
+                }
+                .img2 {
+                    background-image: url(/images/mobile/image-gallery-orange.jpg);
+                    background-size: cover;
+                }
+                .img3 {
+                    background-image: url(/images/mobile/image-gallery-cone.jpg);
+                    background-size: cover;
+                }
+                .img4 {
+                    background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+                    background-size: cover;
+                }
+            }
+            footer {
+                height: 55vh;
+                background-color: $darkModerateCyan;
             }
         }
     }
-}
+    
+    // .attribution { font-size: 11px; text-align: center; }
+    //     .attribution a { color: hsl(228, 45%, 44%); }
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
