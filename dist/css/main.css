@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+main {
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+main .header {
+  height: 70%;
+  background: url("/images/mobile/image-header.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .header h1 {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
