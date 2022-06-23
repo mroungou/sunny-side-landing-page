@@ -14,7 +14,6 @@ main {
 main .header {
   height: 70%;
   background: url("/images/mobile/image-header.jpg");
-  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,6 +27,133 @@ main .header h1 {
   font-size: 3rem;
   text-align: center;
   letter-spacing: 0.4rem;
+}
+
+main .ads {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[1];
+      grid-template-columns: repeat(1, auto);
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+}
+
+main .ads .egg {
+  height: 47vh;
+  background-image: url("/images/mobile/image-transform.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .ads .transform {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 3rem;
+}
+
+main .ads .transform h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 3rem 2rem 1rem;
+}
+
+main .ads .transform p {
+  font-family: "Barlow", sans-serif;
+  color: #a7abae;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0rem 2rem 2rem;
+}
+
+main .ads .transform span {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0rem 8rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  -webkit-text-decoration: underline #fad400;
+          text-decoration: underline #fad400;
+}
+
+main .ads .glass {
+  height: 47vh;
+  background-image: url(/images/mobile/image-stand-out.jpg);
+  background-size: cover;
+}
+
+main .ads .stand-out h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 3rem 2rem 1rem;
+}
+
+main .ads .stand-out p {
+  font-family: "Barlow", sans-serif;
+  color: #a7abae;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0rem 2.5rem 2rem;
+}
+
+main .ads .stand-out span {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0rem 8rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  -webkit-text-decoration: underline #fe7867;
+          text-decoration: underline #fe7867;
+}
+
+main .ads .graphic {
+  height: 80vh;
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+}
+
+main .ads .graphic h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 3rem 2rem 1rem;
+}
+
+main .ads .graphic p {
+  font-family: "Barlow", sans-serif;
+  color: #a7abae;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0rem 1rem 2rem;
+}
+
+main .ads .photography h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 3rem 2rem 1rem;
+}
+
+main .ads .photography p {
+  font-family: "Barlow", sans-serif;
+  color: #a7abae;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0rem 1rem 2rem;
 }
 
 .attribution {
