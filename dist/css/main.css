@@ -287,4 +287,30 @@ body main footer {
   height: 55vh;
   background-color: #91d4c6;
 }
+
+body main footer .foot-logo {
+  padding: 3rem 8rem;
+}
+
+body main footer .links a {
+  font-family: "Barlow", sans-serif;
+  color: #25564b;
+  text-decoration: none;
+  padding-left: 3.5rem;
+}
+
+body main footer .links a:visited {
+  color: #19536b;
+}
+
+body main footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8rem 5rem;
+}
+
+body main footer .socials img {
+  padding-left: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */
