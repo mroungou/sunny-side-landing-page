@@ -40,7 +40,7 @@ body {
         width: fit-content;
         .header {
             height: 70%;
-            background: url("/images/mobile/image-header.jpg");
+            background: url("./images/mobile/image-header.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -63,7 +63,7 @@ body {
             grid-template-rows: repeat(6, auto);
             .egg {
                 height: 47vh;
-                background-image: url("/images/mobile/image-transform.jpg");
+                background-image: url("./images/mobile/image-transform.jpg");
                 background-size: cover;
                 background-repeat: no-repeat;
             }
