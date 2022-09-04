@@ -14,7 +14,7 @@ body main {
 
 body main .header {
   height: 70%;
-  background: url("/images/mobile/image-header.jpg");
+  background: url("../images/mobile/image-header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +29,6 @@ body main .header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #25564b;
   color: white;
 }
 
@@ -80,6 +79,9 @@ body main .header .toggle-button .bar {
 }
 
 @media screen and (max-width: 400px) {
+  body main .header .brand {
+    margin: .5rem;
+  }
   body main .header .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;

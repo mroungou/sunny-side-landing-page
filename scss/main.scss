@@ -41,7 +41,7 @@ body {
         width: fit-content;
         .header {
             height: 70%;
-            background: url("/images/mobile/image-header.jpg");
+            background: url("../images/mobile/image-header.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -50,7 +50,7 @@ body {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                background-color: $darkDesaturatedCyan;
+                // background-color: $darkDesaturatedCyan;
                 color: $white;
                 .navbar-links ul{
                     margin: 0;
@@ -66,6 +66,7 @@ body {
                         }
                     }
                 }
+                
             }
 
             .navbar-links li:hover{
@@ -91,6 +92,10 @@ body {
             }
 
             @media screen and (max-width: 400px) {
+                .brand  {
+                    margin: .5rem;
+                }
+                
                 .toggle-button {
                     display: flex;
                 }
