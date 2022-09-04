@@ -14,7 +14,7 @@ body main {
 
 body main .header {
   height: 70%;
-  background: url("/images/mobile/image-header.jpg");
+  background: url(../images/mobile/image-header.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,7 +142,7 @@ body .ads {
 
 body .ads .egg {
   height: 47vh;
-  background-image: url("/images/mobile/image-transform.jpg");
+  background-image: url(../images/mobile/image-transform.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -184,7 +184,7 @@ body .ads .transform span {
 
 body .ads .glass {
   height: 47vh;
-  background-image: url("/images/mobile/image-stand-out.jpg");
+  background-image: url(../images/mobile/image-stand-out.jpg);
   background-size: cover;
 }
 
@@ -222,7 +222,7 @@ body .ads .stand-out span {
 
 body .ads .graphic {
   height: 82vh;
-  background-image: url("/images/mobile/image-graphic-design.jpg");
+  background-image: url(../images/mobile/image-graphic-design.jpg);
   background-size: cover;
 }
 
@@ -251,7 +251,7 @@ body .ads .graphic p {
 
 body .ads .photography {
   height: 82vh;
-  background-image: url("/images/mobile/image-photography.jpg");
+  background-image: url(../images/mobile/image-photography.jpg);
   background-size: cover;
 }
 
@@ -365,22 +365,22 @@ body .publicity {
 }
 
 body .publicity .img1 {
-  background-image: url("/images/mobile/image-gallery-milkbottles.jpg");
+  background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
   background-size: cover;
 }
 
 body .publicity .img2 {
-  background-image: url("/images/mobile/image-gallery-orange.jpg");
+  background-image: url(../images/mobile/image-gallery-orange.jpg);
   background-size: cover;
 }
 
 body .publicity .img3 {
-  background-image: url("/images/mobile/image-gallery-cone.jpg");
+  background-image: url(../images/mobile/image-gallery-cone.jpg);
   background-size: cover;
 }
 
 body .publicity .img4 {
-  background-image: url("/images/mobile/image-gallery-sugar-cubes.jpg");
+  background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
   background-size: cover;
 }
 
