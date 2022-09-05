@@ -41,7 +41,7 @@ body {
         width: fit-content;
         .header {
             height: 70%;
-            background: url(/images/mobile/image-header.jpg);
+            background: url(./images/mobile/image-header.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -148,7 +148,7 @@ body {
             grid-template-rows: repeat(6, auto);
             .egg {
                 height: 47vh;
-                background-image: url(/images/mobile/image-transform.jpg);
+                background-image: url(./images/mobile/image-transform.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
             }
@@ -174,7 +174,7 @@ body {
             }
             .glass {
                 height: 47vh;
-                background-image: url(/images/mobile/image-stand-out.jpg);
+                background-image: url(./images/mobile/image-stand-out.jpg);
                 background-size: cover;
             }
             .stand-out {
@@ -198,7 +198,7 @@ body {
             }
             .graphic {
                 height: 82vh;
-                background-image: url(/images/mobile/image-graphic-design.jpg);
+                background-image: url(./images/mobile/image-graphic-design.jpg);
                 background-size: cover;
                 .text1 {
                     padding-top: 18rem
@@ -217,7 +217,7 @@ body {
                     padding-top: 18rem
                 }
                 height: 82vh;
-                background-image: url(/images/mobile/image-photography.jpg);
+                background-image: url(./images/mobile/image-photography.jpg);
                 background-size: cover;
                 h4 {
                     @include headers;
@@ -296,19 +296,19 @@ body {
                 grid-template-rows: 1fr 1fr;
 
                 .img1 {
-                    background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+                    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
                     background-size: cover;
                 }
                 .img2 {
-                    background-image: url(/images/mobile/image-gallery-orange.jpg);
+                    background-image: url(./images/mobile/image-gallery-orange.jpg);
                     background-size: cover;
                 }
                 .img3 {
-                    background-image: url(/images/mobile/image-gallery-cone.jpg);
+                    background-image: url(./images/mobile/image-gallery-cone.jpg);
                     background-size: cover;
                 }
                 .img4 {
-                    background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+                    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
                     background-size: cover;
                 }
             }
