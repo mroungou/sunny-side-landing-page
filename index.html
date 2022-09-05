@@ -21,30 +21,37 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./dist/images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
     <main>
-      <div class="header">
-        <nav class="navbar">
-          <div class="brand"><img src="/images/logo.svg" alt="" /></div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="#"></a>About</li>
-              <li><a href="#"></a>Services</li>
-              <li><a href="#"></a>Projects</li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+      <header class="header">
+        <div class="navbar">
+          <div class="brand">
+            <img src="./dist/images/logo.svg" alt="" />
           </div>
-        </nav>
+          <div class="navbar-right">
+            <a href="#" id="toggle-button" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div id="collapsible" class="collapsible active">
+              <ul class="navbar-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#" class="yellow-button">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero">
         <h1>We are creatives</h1>
       </div>
       <div class="ads">
@@ -91,7 +98,7 @@
       <div class="testimonials">
         <h3>Client testimonials</h3>
         <div class="review review1">
-          <img src="/images/image-emily.jpg" alt="" />
+          <img src="./dist/images/image-emily.jpg" alt="" />
           <p>
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
@@ -102,7 +109,7 @@
           </div>
         </div>
         <div class="review review2">
-          <img src="/images/image-thomas.jpg" alt="" />
+          <img src="./dist/images/image-thomas.jpg" alt="" />
           <p>
             Sunnyside’s enthusiasm coupled with their keen interest in our
             brand’s success made it a satisfying and enjoyable experience.
@@ -113,7 +120,7 @@
           </div>
         </div>
         <div class="review review3">
-          <img src="/images/image-jennie.jpg" alt="" />
+          <img src="./dist/images/image-jennie.jpg" alt="" />
           <p>
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
@@ -131,23 +138,23 @@
         <div class="img4"></div>
       </div>
       <footer>
-        <img class="foot-logo" src="/images/logo.svg" alt="" />
+        <img class="foot-logo" src="./dist/images/logo.svg" alt="" />
         <div class="links">
           <a href="#">About</a> <a href="#">Services</a>
           <a href="#">Projects</a>
         </div>
         <div class="socials">
           <div class="facebook">
-            <img src="/images/icon-facebook.svg" alt="" />
+            <img src="./dist/images/icon-facebook.svg" alt="" />
           </div>
           <div class="instagram">
-            <img src="/images/icon-instagram.svg" alt="" />
+            <img src="./dist/images/icon-instagram.svg" alt="" />
           </div>
           <div class="twitter">
-            <img src="/images/icon-twitter.svg" alt="" />
+            <img src="./dist/images/icon-twitter.svg" alt="" />
           </div>
           <div class="pinterst">
-            <img src="/images/icon-pinterest.svg" alt="" />
+            <img src="./dist/images/icon-pinterest.svg" alt="" />
           </div>
         </div>
       </footer>

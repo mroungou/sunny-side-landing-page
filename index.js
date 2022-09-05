@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementsByClassName('toggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    const toggleButton = document.getElementById('toggle-button')
+    const collapsible = document.getElementById('collapsible')
     
     toggleButton.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active')
+        collapsible.classList.toggle('active')
     })
     
 })

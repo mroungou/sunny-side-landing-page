@@ -10,109 +10,115 @@ body main {
   width: -moz-fit-content;
   width: fit-content;
 }
-body main .header {
-  height: 70%;
-  background: url(../images/mobile/image-header.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+body main header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-body main .header .navbar {
+body main header.header div.navbar {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
-  color: hsl(0deg, 0%, 100%);
+  justify-content: space-between;
 }
-body main .header .navbar .navbar-links ul {
-  margin: 0;
-  padding: 0;
+body main header.header div.navbar .brand {
+  margin: 2rem;
+}
+body main header.header div.navbar .navbar-right {
+  padding: 0 15px;
+  margin-left: auto;
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-body main .header .navbar .navbar-links ul li {
-  list-style: none;
-}
-body main .header .navbar .navbar-links ul li a {
-  text-decoration: none;
-  color: hsl(0deg, 0%, 100%);
-  padding: 1rem;
-  display: block;
-}
-body main .header .navbar-links li:hover {
-  background-color: hsl(51deg, 100%, 49%);
-}
-body main .header .toggle-button {
+body main header.header div.navbar .toggle-button {
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 2.5rem;
+  right: 2rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 21px;
 }
-body main .header .toggle-button .bar {
+body main header.header div.navbar .toggle-button .bar {
   height: 3px;
   width: 100%;
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 10px;
 }
 @media screen and (max-width: 400px) {
-  body main .header .brand {
-    margin: 0.5rem;
-  }
-  body main .header .toggle-button {
-    display: flex;
-  }
-  body main .header .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  body main .header .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  body main .header .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-  body main .header .navbar-links li {
-    text-align: center;
-  }
-  body main .header .navbar-links li a {
-    padding: 0.5rem 1rem;
-  }
-  body main .header .navbar-links.active {
+  body main header.header div.navbar .toggle-button {
     display: flex;
   }
 }
-body main h1 {
+@media screen and (max-width: 400px) {
+  body main header.header div.navbar .collapsible {
+    display: none;
+    margin: 1rem;
+    background-color: hsl(0deg, 0%, 100%);
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    width: 80%;
+  }
+  body main header.header div.navbar .collapsible.active {
+    display: flex;
+  }
+  body main header.header div.navbar .collapsible ul.navbar-links {
+    font-family: "Barlow", sans-serif;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  body main header.header div.navbar .collapsible ul.navbar-links li {
+    list-style: none;
+  }
+  body main header.header div.navbar .collapsible ul.navbar-links li a {
+    text-decoration: none;
+    color: hsl(213deg, 9%, 39%);
+    margin: 2rem;
+    display: block;
+  }
+}
+body main .hero {
+  height: 60vh;
+  background: url(../images/mobile/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main .hero h1 {
   margin: 0;
+  padding-top: 8rem;
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   color: hsl(0deg, 0%, 100%);
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: 0.4rem;
 }
-body .ads {
+body main .ads {
   display: grid;
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(6, auto);
 }
-body .ads .egg {
+body main .ads .egg {
   height: 47vh;
   background-image: url(../images/mobile/image-transform.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-body .ads .transform {
+body main .ads .transform {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   margin-bottom: 3rem;
 }
-body .ads .transform h4 {
+body main .ads .transform h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.5rem;
@@ -120,7 +126,7 @@ body .ads .transform h4 {
   margin: 0;
   padding: 3rem 2rem 1rem;
 }
-body .ads .transform p {
+body main .ads .transform p {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
   text-align: center;
@@ -128,7 +134,7 @@ body .ads .transform p {
   margin: 0;
   padding: 0rem 2rem 2rem;
 }
-body .ads .transform span {
+body main .ads .transform span {
   text-align: center;
   text-transform: uppercase;
   padding: 0rem 8rem;
@@ -137,15 +143,15 @@ body .ads .transform span {
   -webkit-text-decoration: underline hsl(51deg, 100%, 49%);
           text-decoration: underline hsl(51deg, 100%, 49%);
 }
-body .ads .glass {
+body main .ads .glass {
   height: 47vh;
   background-image: url(../images/mobile/image-stand-out.jpg);
   background-size: cover;
 }
-body .ads .stand-out {
+body main .ads .stand-out {
   margin-bottom: 3rem;
 }
-body .ads .stand-out h4 {
+body main .ads .stand-out h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.5rem;
@@ -153,7 +159,7 @@ body .ads .stand-out h4 {
   margin: 0;
   padding: 3rem 2rem 1rem;
 }
-body .ads .stand-out p {
+body main .ads .stand-out p {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
   text-align: center;
@@ -161,7 +167,7 @@ body .ads .stand-out p {
   margin: 0;
   padding: 0rem 2.5rem 2rem;
 }
-body .ads .stand-out span {
+body main .ads .stand-out span {
   text-align: center;
   text-transform: uppercase;
   padding: 0rem 8rem;
@@ -170,15 +176,15 @@ body .ads .stand-out span {
   -webkit-text-decoration: underline hsl(7deg, 99%, 70%);
           text-decoration: underline hsl(7deg, 99%, 70%);
 }
-body .ads .graphic {
+body main .ads .graphic {
   height: 82vh;
   background-image: url(../images/mobile/image-graphic-design.jpg);
   background-size: cover;
 }
-body .ads .graphic .text1 {
+body main .ads .graphic .text1 {
   padding-top: 18rem;
 }
-body .ads .graphic h4 {
+body main .ads .graphic h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.5rem;
@@ -186,7 +192,7 @@ body .ads .graphic h4 {
   margin: 0;
   padding: 3rem 2rem 1rem;
 }
-body .ads .graphic p {
+body main .ads .graphic p {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
   text-align: center;
@@ -195,15 +201,15 @@ body .ads .graphic p {
   padding: 1.5rem 1rem 2rem;
   color: hsl(167deg, 40%, 24%);
 }
-body .ads .photography {
+body main .ads .photography {
   height: 82vh;
   background-image: url(../images/mobile/image-photography.jpg);
   background-size: cover;
 }
-body .ads .photography .text1 {
+body main .ads .photography .text1 {
   padding-top: 18rem;
 }
-body .ads .photography h4 {
+body main .ads .photography h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.5rem;
@@ -211,7 +217,7 @@ body .ads .photography h4 {
   margin: 0;
   padding: 3rem 2rem 1rem;
 }
-body .ads .photography p {
+body main .ads .photography p {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
   text-align: center;
@@ -220,10 +226,10 @@ body .ads .photography p {
   padding: 1rem 1rem 2rem;
   color: hsl(198deg, 62%, 26%);
 }
-body .testimonials {
+body main .testimonials {
   padding-bottom: 5rem;
 }
-body .testimonials h3 {
+body main .testimonials h3 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   text-align: center;
@@ -233,7 +239,7 @@ body .testimonials h3 {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
-body .testimonials .review1 p {
+body main .testimonials .review1 p {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
   text-align: center;
@@ -242,10 +248,10 @@ body .testimonials .review1 p {
   padding: 2.5rem 3rem;
   color: hsl(213deg, 9%, 39%);
 }
-body .testimonials .review2 {
+body main .testimonials .review2 {
   padding-top: 4rem;
 }
-body .testimonials .review2 p {
+body main .testimonials .review2 p {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
   text-align: center;
@@ -254,10 +260,10 @@ body .testimonials .review2 p {
   padding: 2.5rem;
   color: hsl(213deg, 9%, 39%);
 }
-body .testimonials .review3 {
+body main .testimonials .review3 {
   padding-top: 4rem;
 }
-body .testimonials .review3 p {
+body main .testimonials .review3 p {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
   text-align: center;
@@ -266,67 +272,72 @@ body .testimonials .review3 p {
   padding: 2.5rem 2.5rem;
   color: hsl(213deg, 9%, 39%);
 }
-body .testimonials img {
+body main .testimonials img {
   border-radius: 50%;
   width: 30%;
   padding: 0rem 8.5rem;
 }
-body .testimonials .review .client {
+body main .testimonials .review .client {
   text-align: center;
   line-height: 2;
 }
-body .testimonials .review .name {
+body main .testimonials .review .name {
   display: block;
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 1.25rem;
 }
-body .testimonials .review .title {
+body main .testimonials .review .title {
   font-family: "Barlow", sans-serif;
   color: hsl(210deg, 4%, 67%);
 }
-body .publicity {
+body main .publicity {
   height: 55vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-body .publicity .img1 {
+body main .publicity .img1 {
   background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
   background-size: cover;
 }
-body .publicity .img2 {
+body main .publicity .img2 {
   background-image: url(../images/mobile/image-gallery-orange.jpg);
   background-size: cover;
 }
-body .publicity .img3 {
+body main .publicity .img3 {
   background-image: url(../images/mobile/image-gallery-cone.jpg);
   background-size: cover;
 }
-body .publicity .img4 {
+body main .publicity .img4 {
   background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
   background-size: cover;
 }
-body footer {
+body main footer {
   height: 55vh;
   background-color: hsl(167deg, 44%, 70%);
 }
-body footer .foot-logo {
+body main footer .foot-logo {
   padding: 3rem 8rem;
 }
-body footer .links a {
+body main footer .links a {
   font-family: "Barlow", sans-serif;
   color: hsl(167deg, 40%, 24%);
   text-decoration: none;
   padding-left: 3.5rem;
 }
-body footer .links a:visited {
+body main footer .links a:visited {
   color: hsl(198deg, 62%, 26%);
 }
-body footer .socials {
+body main footer .socials {
   display: flex;
   padding: 5rem 5rem;
 }
-body footer .socials img {
+body main footer .socials img {
   padding-left: 1.5rem;
+}
+body main .yellow-button {
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: hsl(51deg, 100%, 49%);
 }/*# sourceMappingURL=main.css.map */
