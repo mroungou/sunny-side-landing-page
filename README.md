@@ -1,5 +1,7 @@
 # Frontend Mentor - Sunnyside agency landing page
 
+## The website is only available to be viewed on mobile
+
 ![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
